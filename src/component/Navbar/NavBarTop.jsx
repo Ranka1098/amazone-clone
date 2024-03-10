@@ -8,16 +8,18 @@ import { RxMagnifyingGlass } from "react-icons/rx";
 import { SiGooglelens } from "react-icons/si";
 import { BsCart2 } from "react-icons/bs";
 
-const Navbar = () => {
+const NavBarTop = () => {
   return (
     <div className="bg-[#131921] text-white px-4 py-1 flex items-center gap-2">
       {/* ------------------image start-------------------- */}
       <div>
-        <img
-          src={amazone}
-          alt="amazone-logo"
-          className=" w-[7rem] border border-transparent hover:border-white"
-        />
+        <a href="/">
+          <img
+            src={amazone}
+            alt="amazone-logo"
+            className=" w-[7rem] border border-transparent hover:border-white"
+          />
+        </a>
       </div>
       {/* ------------------image end---------------------- */}
 
@@ -50,9 +52,10 @@ const Navbar = () => {
         <input
           type="text"
           placeholder=" Search Amazon Here..."
-          className="py-2 w-[32rem] px-2 outline-none text-black font-semibold"
+          className="py-2 w-[32rem] px-2 outline-none text-black font-semibold "
         />
-        <span className="text-[#9FA9AA] absolute right-[4rem]">
+
+        <span className="text-[#9FA9AA] absolute right-[4rem] text-lg cursor-pointer">
           <SiGooglelens />
         </span>
         <button className="px-3 py-2 flex items-center text-2xl bg-[#FEBD69] text-black font-bold rounded-r-md">
@@ -95,7 +98,9 @@ const Navbar = () => {
       {/* ------------------Retutn order End---- ------------------------ */}
       {/* ------------------Cart start---- ------------------------ */}
       <div className="flex items-center relative  px-2 py-2 cursor-pointer border border-transparent hover:border-white">
-        <p className="text-md absolute -top-2 left-5 text-lg text-orange-500 font-bold">0</p>
+        <p className="text-md absolute -top-2 left-5 text-lg text-orange-500 font-bold">
+          0
+        </p>
         <button className="text-4xl">
           <BsCart2 />
         </button>
@@ -106,4 +111,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBarTop;

@@ -1,9 +1,11 @@
-import Navbar from "./component/Navbar/Navbar";
+import NavBottom from "./component/NavBottom";
+import NavBarTop from "./component/Navbar/NavBarTop";
 
 function App() {
   return (
     <>
-    <Navbar />
+    <NavBarTop />
+    <NavBottom />
     </>
   );
 }

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* several classes */
+@layer components {
+    .headerHover {
+        @apply text-sm flex items-center gap-5 px-2 py-2 border border-transparent hover:border-white;
+    }
+}
