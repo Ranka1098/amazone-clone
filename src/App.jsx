@@ -1,13 +1,21 @@
-import NavBottom from "./component/NavBottom";
-import NavBarTop from "./component/Navbar/NavBarTop";
+import { Outlet, createBrowserRouter } from "react-router-dom";
+import Footer from "./component/Footer/Footer";
+import Header from "./component/Header/Header";
 
-function App() {
+const AppLayout = () => {
   return (
-    <>
-    <NavBarTop />
-    <NavBottom />
-    </>
+    <div>
+      <Header />
+      <Outlet />
+      <Footer />
+    </div>
   );
+};
+const appRouter= createBrowserRouter([
+{
+path:"/",
+element:<AppLayout />
 }
+])
 
-export default App;
+export default appRouter;
