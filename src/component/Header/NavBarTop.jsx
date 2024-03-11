@@ -10,7 +10,7 @@ import { BsCart2 } from "react-icons/bs";
 
 const NavBarTop = () => {
   return (
-    <div className="bg-[#131921] text-white px-4 py-1 flex items-center gap-2">
+    <div className="bg-[#131921] text-white px-4 py-[0.5rem] flex items-center gap-2">
       {/* ------------------image start-------------------- */}
       <div>
         <a href="/">
@@ -24,7 +24,7 @@ const NavBarTop = () => {
       {/* ------------------image end---------------------- */}
 
       {/* ------------------deliver start---------------------- */}
-      <div className="text-white flex items-center px-1 py-1 border border-transparent hover:border-white">
+      <div className="text-white flex items-center px-1  py-1 border border-transparent hover:border-white">
         {/* location logo */}
         <div>
           <p className="text-white text-2xl">
@@ -34,13 +34,13 @@ const NavBarTop = () => {
         {/* delivery location */}
         <div>
           <p className="text-sm">Delivery to Pune</p>
-          <p className="font-bold -mt-1">Update Loaction</p>
+          <p className="font-bold -mt-1">Update location </p>
         </div>
       </div>
       {/* ------------------deliver end------------------------ */}
 
       {/* ------------------Search Bar start ------------------------ */}
-      <div className="flex items-center relative border-[5px] border-transparent ">
+      <div className="w-[100%-32rem] flex items-center relative border-[5px] border-transparent ">
         {/* button */}
         <button className="flex items-center px-2 py-2 bg-[#E6E6E6] text-gray-600 rounded-l-md hover:text-black">
           All{" "}
@@ -52,7 +52,7 @@ const NavBarTop = () => {
         <input
           type="text"
           placeholder=" Search Amazon Here..."
-          className="py-2 w-[32rem] px-2 outline-none text-black font-semibold "
+          className="py-2 w-[30rem] px-2 outline-none text-black font-semibold "
         />
 
         <span className="text-[#9FA9AA] absolute right-[4rem] text-lg cursor-pointer">
@@ -65,7 +65,7 @@ const NavBarTop = () => {
       {/* ------------------Search Bar end-- ------------------------ */}
 
       {/* ------------------Language start-- ------------------------ */}
-      <div className="flex items-center gap-1  px-2 py-2 cursor-pointer border border-transparent hover:border-white">
+      <div className="flex items-center gap-1  px-2 py-3 cursor-pointer border border-transparent hover:border-white">
         {/* flag logo */}
         <img src={india} alt="india flag" className="w-[1.2rem]" />
         <p className="font-bold">IN</p>
@@ -97,8 +97,8 @@ const NavBarTop = () => {
       </div>
       {/* ------------------Retutn order End---- ------------------------ */}
       {/* ------------------Cart start---- ------------------------ */}
-      <div className="flex items-center relative  px-2 py-2 cursor-pointer border border-transparent hover:border-white">
-        <p className="text-md absolute -top-2 left-5 text-lg text-orange-500 font-bold">
+      <div className="flex items-center relative  px-2 py-3 cursor-pointer border border-transparent hover:border-white">
+        <p className="text-md absolute -top-1 left-5 text-lg text-orange-500 font-bold">
           0
         </p>
         <button className="text-4xl">
